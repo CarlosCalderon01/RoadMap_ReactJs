@@ -5,6 +5,7 @@ import Home from "../Page/Home.jsx";
 import About from "../Page/About.jsx";
 import Contact from "../Page/Contact.jsx";
 import Search from "../Page/Search.jsx";
+import ContactDetails from "../Page/ContactDetails.jsx";
 
 function EnrutamientoTest() {
   return (
@@ -30,7 +31,10 @@ function EnrutamientoTest() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/search" element={<Search />} />
-          <Route path="/contact/:nombreContact" element={<Contact />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact/:idcontact" element={<Contact />}>
+            <Route path="details" element={<ContactDetails />} />
+          </Route>
           <Route path="/about" element={<About />} />
         </Routes>
       </BrowserRouter>
@@ -46,6 +50,8 @@ export default EnrutamientoTest;
   - Enrutamiento con React-Router-Dom.
 
   - Como capturar segmento dinamico de una url.
+
+  - Rutas Anidadas, son rutas dentro de mas rutas.
 
 + Explicacion Componentes:
 
