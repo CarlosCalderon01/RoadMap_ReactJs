@@ -6,17 +6,16 @@ function Contact() {
   return (
     <div className="component_Contact">
       <div className="Titulo_Pagina">
-        <h1>Component Page Contact!</h1>
+        <h1>Page Contact!</h1>
       </div>
       <div className="Description_Pagina">
-        <p>Description pagina Contact!</p>
+        <p> Esta es la description del usuario {idcontact} </p>
       </div>
       <div className="Contenido_Pagina">
         <div className="Contenido_Testing">
-          <h1>Usando useParams de React Router Dom</h1>
           <div className="Parametro_Dinamico">
-            <p>{idcontact}</p>
-            <Link to="details">Get Details Contact</Link>
+            <p>Get Details Contact</p>
+            <Link to="details">{idcontact}</Link>
             <Outlet />
           </div>
         </div>

@@ -13,14 +13,14 @@ function Search() {
   return (
     <div className="component_Search">
       <div className="Titulo_Pagina">
-        <h1>Component Page Search!</h1>
+        <h1>Page Search!</h1>
       </div>
       <div className="Description_Pagina">
-        <p>Description pagina</p>
+        <p>Description - Page Search!</p>
       </div>
       <div className="Contenido_Pagina">
         <div className="Contenido_Testing">
-          <h1>React Router List Dinamic</h1>
+          <h1>List Contact User Search!</h1>
           <ul>
             {listContactUsers.map((UserContact) => (
               <li key={UserContact}>

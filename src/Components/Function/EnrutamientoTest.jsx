@@ -6,6 +6,7 @@ import About from "../Page/About.jsx";
 import Contact from "../Page/Contact.jsx";
 import Search from "../Page/Search.jsx";
 import ContactDetails from "../Page/ContactDetails.jsx";
+import ErrorPage from "../Page/ErrorPage.jsx";
 
 function EnrutamientoTest() {
   return (
@@ -36,6 +37,7 @@ function EnrutamientoTest() {
             <Route path="details" element={<ContactDetails />} />
           </Route>
           <Route path="/about" element={<About />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>
     </div>
