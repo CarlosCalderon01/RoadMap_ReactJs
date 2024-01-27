@@ -1,14 +1,14 @@
 // PAKAGE THIRD
 // PAKAGE LOCAL
-import EnrutamientoTest from './Components/Function/EnrutamientoTest'
-import './Styles.css'
+import SideBar1 from "./Components/Template/SideBar1";
 
 function App() {
   return (
-    <div className='MainApp'>
-      <EnrutamientoTest />
+    <div className="component_App">
+      <SideBar1>
+      </SideBar1>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
